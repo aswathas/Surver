@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">     
+</head>
+<body>
+    <div id="heading">
+      <h1 id="title">Survey Form for Programmers</h1>
+      <p id="description">Vanakam da mapla website lanthu!</p> 
+    </div>
+    <div id="main">
+      <form id="survey-form">
+        <div id="personal">
+          <label for="name"><b>Name:</b></label>
+          <input
+            id="name"
+            placeholder="Name inga eluthu thambi"
+            required
+            type="text"
+          /><br><br>
+          <label for="age"><b>Age:</b></label>  
+          <input
+            id="age"
+            placeholder="Vayasu ena pa?"
+            required
+            type="number"
+          />
+          <br><br>
+          <label for="email"><b>Email:</b></label> 
+          <input
+            id="email"
+            type="email"
+            required
+            placeholder="Mail id sollunga aiyaa"
+          />
+          <br><br>
+        </div>
+        <div>
+          <label for="dropdown-label">What Language are u familiar with?</label>
+          <select id="dropdown">
+            <option value="python">Python</option>
+            <option value="Java">Java</option>
+            <option value="nothing">Enaku English eh theriyathu da thambi</option>
+            <option value="learn">"Neenga etha pathi pesitu irukinga uncle?"</option>
+          </select><br><br>  
+        </div>
+        <div id="button-area">
+          <label for="job-label"><strong>Dei thambi enada panra</strong></label><br>
+          <input type="radio" class="radio-inline" name="gender" value="employed" checked> Velai paarthu kondu iruken(Employed)<br>
+          <input type="radio" class="radio-inline" name="gender" value="freelancer"> Self Employed.(Freelancer)<br>
+          <input type="radio" class="radio-inline" name="gender" value="applier">Velai thedikitu iruken da thambi(Applier)<br>
+          <input type="radio" class="radio-inline" name="gender" value="unemployed">Vettiya thaan iruken(Unemployed)<br>
+        </div>
+        <div id="button-area"><br><br>
+          <label for="os"><b>Operating System</b></label><br>
+          <input type="checkbox" value="windows">Windows<br>
+          <input type="checkbox" value="Linux">Linux<br>
+          <input type="checkbox" value="Android">Android<br>
+        </div> 
+        <div id="button-area"><br><br>
+          <label for="intrested"><b>What are you intrested to learn?</b></label><br>
+          <input type="checkbox" name="tech1" value="DS">Data Science<br> 
+          <input type="checkbox" name="tech4" value="ML">Machine Learning<br>
+          <input type="checkbox" name="tech2" value="Web3">WEB-3<br>
+          <input type="checkbox" name="tech3" value="Webdev">Full-stack<br>
+        </div>
+        <div id="ending">
+          <label id="Comments"><br><b>Do you have any suggestion?</b></label><br><br>
+          <textarea style=height:120px; class="form" placeholder="Ethaaa vathu suggestion sollunga aiyaa"></textarea><br><br>
+        </div>
+        <div class="cont">	
+          <button class="btn"><span>Submit</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="10" width="10"></button>    
+        </div>
+      </form>
+    </div>
+    <div class="cat">
+      <div class="ear ear--left"></div>
+      <div class="ear ear--right"></div>
+      <div class="face">
+        <div class="eye eye--left">
+          <div class="eye-pupil"></div>
+        </div>
+        <div class="eye eye--right">
+          <div class="eye-pupil"></div>
+        </div>
+        <div class="muzzle"></div>
+      </div>
+    </div>
+</body> 
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+</html>    
